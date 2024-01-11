@@ -1,0 +1,119 @@
+.top_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 1.2em 1em;
+  background-color: var(--navbar_color);
+}
+
+.top_header_nav {
+  fa-icon {
+    font-size: 1.2em;
+    color: var(--text_navbar_color);
+  }
+  ul {
+    position: fixed;
+    right: 0;
+    padding: 1em 2em;
+    top: 60px;
+    background-color: var(--menu_open_color);
+    display: none;
+    list-style: none;
+    z-index: 100;
+  }
+  a {
+    display: block;
+    text-align: center;
+    color: var(--text_navbar_color);
+    font-size: var(--text_navbar_height);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  a:hover {
+    color: var(--text_name);
+    transition: color 0.5s ease;
+  }
+}
+
+.footer_icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  fa-icon {
+    cursor: pointer;
+  }
+}
+
+.top_menu {
+  position: absolute;
+}
+
+#name {
+  color: var(--text_name);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#last_name {
+  color: var(--text_navbar_color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (min-width: 48em) {
+  .top_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 80px;
+    width: 250px;
+    height: 100vh;
+    padding: 2em 1.5em;
+    background-color: var(--navbar_color);
+  }
+  .top_header_nav {
+    fa-icon {
+      display: none;
+    }
+    ul {
+      display: flex !important;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      position: static;
+      align-items: center;
+    }
+    li{
+        display: flex;
+    }
+    a {
+      display: block;
+      text-align: center;
+      color: var(--text_navbar_color);
+      font-size: large !important;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 0;
+    }
+    .footer_icons fa-icon{
+        margin-top: 120px;
+        display: flex;
+        align-items: center;        
+        color: white;
+        font-size: large !important;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    a:hover {
+      color: var(--text_name);
+      transition: color 0.5s ease;
+    }
+  }
+  
+}

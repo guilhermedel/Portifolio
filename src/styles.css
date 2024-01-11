@@ -1,3 +1,13 @@
+:root{
+  --navbar_color:#212121;
+  --menu_open_color:#212121ef;
+  --text_navbar_color:#b1abaa;
+  --background_color:#f2e9df;
+  --button_color:#d9822c;
+  --text_name:#9d5d1e;
+  --text_navbar_height:1.25em;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

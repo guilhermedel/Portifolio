@@ -1,0 +1,26 @@
+<header class="top_header">
+  <p id="name">
+    Guilherme
+    <span id="last_name">Abreu</span>
+  </p>
+  <nav class="top_header_nav">
+    <div>
+      <fa-icon [icon]="faBars" (click)="handleShowMenu()" />
+    </div>
+    <ul [style.display]="showMenu ? 'block' : 'none'">
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Service</a></li>
+      <li><a href="">Experience</a></li>
+      <li><a href="">Portifolio</a></li>
+      <li><a href="">Contact</a></li>
+      <li>
+        <div class="footer_icons">
+          <fa-icon [icon]="faLinkedin" />
+          <fa-icon [icon]="faGithub" />
+          <fa-icon [icon]="faEnvelope" />
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
